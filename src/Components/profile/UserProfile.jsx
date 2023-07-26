@@ -94,7 +94,7 @@ const Profile = () => {
     padding: '12px 24px',
     fontSize: '1rem',
     fontWeight: 'bold',
-    marginTop:'72px',
+    marginTop:'50px',
     '&:hover': {
       backgroundColor: '#3E8E41',
     },
