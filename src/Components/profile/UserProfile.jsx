@@ -79,7 +79,7 @@ const Profile = () => {
               )}
             </Box>
   
-            <Card sx={{ maxWidth: 345, margin: 'auto' }}>
+            <Card sx={{ height:'30vh',maxWidth: 345, margin: 'auto' }}>
               <CardHeader title={user?.name} />
               <CardContent>
                 <Typography>{user?.email}</Typography>
@@ -88,12 +88,13 @@ const Profile = () => {
               <Button
   onClick={() => setOpen(true)}
   sx={{
-    backgroundColor: '#4CAF50',
+    backgroundColor:'#30cae8',
     color: '#fff',
     borderRadius: '4px',
     padding: '12px 24px',
     fontSize: '1rem',
     fontWeight: 'bold',
+    marginTop:'72px',
     '&:hover': {
       backgroundColor: '#3E8E41',
     },
