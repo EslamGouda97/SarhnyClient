@@ -156,7 +156,7 @@ export default function Messages() {
           lg: '1.3rem'
         }, fontWeight: 'bold', mt: 1 }}>
               <Link to={`/messageTo/user/${user?._id}`} target='_blank' rel='noopener' sx={{ color: 'blue', textDecoration: 'underline' }}>
-              Sarhny-eg.surge.sh/messageTo/user/{user?._id}
+              https://sarhny-client.vercel.app/messageTo/user/{user?._id}
               </Link>
             </Typography>
             <Button variant='contained' sx={{ mt: 3, fontSize: '1.2rem',bgcolor:'red' }} disableElevation onClick={handleClose}>
