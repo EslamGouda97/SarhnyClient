@@ -1,0 +1,139 @@
+/* CardRow.module.css */
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .card {
+    width: 30vw;
+    height: 65vh;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  
+  .card:last-of-type {
+    margin-right: 0;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .card p {
+    color: white;
+    z-index: 1;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .card img {
+    z-index: 1;
+    width: 7rem;
+   height: 7rem;
+   border-radius: 50%;
+   /* margin-bottom: 7rem; */
+  
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(
+      180deg,
+      rgb(0, 183, 255),
+      rgb(255, 48, 255)
+    );
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182e;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 30vw;
+      height: 50vh;
+      margin-right: 10px;
+    }
+    .card img {
+        z-index: 1;
+        width: 6rem;
+       height: 6rem;
+       /* margin-bottom: 4rem; */
+
+      
+      }
+    .card:last-of-type {
+      margin-right: 0;
+    }
+      .card h2 {
+    font-size: 2vw;
+  }
+  .card p {
+    font-size: 1.2vw;
+    padding: 0 5vw;
+  }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      height: 40vh;
+      margin-right: 10px;
+    }
+    .card img {
+        z-index: 1;
+        width: 4rem;
+       height: 4rem;
+       /* margin-bottom: 3rem; */
+
+       
+      
+      }
+    .card:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      height: 35vh;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .card:last-of-type {
+      margin-bottom: 0;
+    }
+  }
