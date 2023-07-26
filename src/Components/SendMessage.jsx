@@ -128,7 +128,7 @@ export default function SendMessages() {
                 rows={8}
                 value={message}
                 onChange={handleMessageChange}
-                sx={{ mt: 5, width: '80%',border:'1px solid',borderRadius:"10px"}}
+                sx={{ mt: 5, width: '80%',borderRadius:"12px"}}
               />
               <Button variant="contained" 
               disabled={message===''}
